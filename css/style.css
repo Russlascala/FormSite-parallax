@@ -1,0 +1,97 @@
+body{
+    font-family:'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#logo-img{
+    width:100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.line{
+    height: 2px;
+    background: #639a00;
+    width:100%;
+}
+#leftTopTxt{
+    margin-top:15px;
+    text-align: center;
+     text-shadow: #345000 1px 0 10px;
+    color:#fff;
+} 
+#right-txt{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+}
+#right-txt span{
+    color: #639a00;
+}
+
+.view{
+     background-image: url(../imgs/city-2.jpg);
+    /*background-repeat: no-repeat;
+    background-size: auto; */
+    /* height: 1000px; */
+       /* The image used */
+    
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+
+/*  Start Form Styles */
+.formContainer{
+   /*  margin-top:200px;  */
+   margin-top: 53px;
+   margin-bottom: 50px;
+  
+}
+form{
+    /* background: rgba(255, 255, 255, 0.5)!important; */
+    background: #e4e4e4!important;
+
+}
+
+.form-parts{
+    margin-top: 10px;
+}
+
+#submitBtn{
+    font-weight: bold;
+    color:#000;
+    background: #85CE00;
+    font-size:18px;
+}
+
+.btn:hover {
+  transition : 0.3s;
+  box-shadow : 0px 0px 1px 6px #0fdab1;
+  cursor : pointer;
+}
+
+#secureImg{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:10px;
+    margin-bottom: 10px
+}
+
+#disclaim{
+    margin-bottom: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: #000;
+    margin-top: 15px;
+    font-size:10px;
+}
+
+/* End Form Styles */

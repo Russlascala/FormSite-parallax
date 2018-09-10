@@ -36,7 +36,7 @@ body{
     /* height: 1000px; */
        /* The image used */
     /* Set a specific height */
-    height: 625px; 
+   /*  height:740px;  */
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -87,8 +87,16 @@ form{
     margin-top: 15px;
     font-size:10px;
 }
-
+/* left of form styles */
+.tableStyle{
+    color:#fff;
+    font-size: 25px;
+    text-shadow: #000 1px 0 10px;
+}
 /* End Form Styles */
+
+
+
 
 /* Content After Form Styles  */
 .content-afterform{
@@ -223,42 +231,26 @@ Extra small devices (portrait phones, less than 544px)
 No media query since this is the default in Bootstrap because it is "mobile first"
 */
 
-/* Small devices (landscape phones, 544px and up) */
-@media (min-width: 420px) {  
-     /* Form Styles */ 
-    .view{
-        height: 570px;
-    }
-
-
-    /* Content After Form Styles  */
-
-}
- 
  
 /* Small devices (landscape phones, 544px and up) */
 @media (min-width: 544px) { 
     /* Form Styles */ 
-    .view{
-        height: 550px;
-    }
+
     .formContainer{
         margin-top: 18px;
     }
-
-
     /* Content After Form Styles  */
-
 }
  
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  
-    /* Form Styles */
+
     #right-txt{
         display: block;
     }
     .formContainer{
         margin-top: 36px;
+        margin-bottom: 36px;
     }
     #leftTopTxt {
         margin-top: 36px;
@@ -281,6 +273,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     }
     .formContainer{
         margin-top: 50px;
+        margin-bottom: 50px;
     }
 
   

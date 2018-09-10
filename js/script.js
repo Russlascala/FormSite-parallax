@@ -1,3 +1,21 @@
+/* Script to change the column stacking for mobile to get list on bottom of form */
+$(window).resize(function () {
+    console.log('resize called');
+    var width = $(window).width();
+    /*  log the width to find out what what pixel to change the order at.
+        The dev tools in browser might be different */
+    //console.log(width); 
+    if (width <= 752) {
+        $('.topMobile').addClass('order-first');
+        $('.bottomMobile').addClass('order-last');
+    } else {
+        $('.topMobile').removeClass('order-first');
+        $('.bottomMobile').removeClass('order-last');
+    }
+})
+    .resize();//trigger the resize event on page load.
+
+
 // Script to animate the Text Sections and button under form
 $(window).resize(function () {
     var width = $(window).width();
@@ -5,12 +23,14 @@ $(window).resize(function () {
     if (width > 752) {
         $(window).scroll(function () {
             if ($(window).scrollTop() > (height1 / 2)) {
+                //changes bounce in on desktop
                 $('.bounceTrigger').addClass(' animated bounceIn');
             } 
         });
     } else if (width <= 752) {
         $(window).scroll(function () {
             if ($(window).scrollTop() > height1 ) {
+                //changes bounce in on mobile
                 $('.bounceTrigger').addClass(' animated bounceIn');
             }
         });
@@ -20,12 +40,13 @@ $(window).resize(function () {
 
     
 // Script to animate the three over on the image
-$(window).change(function () {
+$(window).resize(function () {
     var width = $(window).width();
     var height2 = $(".sectionScroll").height();
     if (width > 752) {
         $(window).scroll(function () {
             if ($(window).scrollTop() > height2) {
+                //changes slide in's on desktop
                 $('.slideRight1').addClass(' animated slideInRight ');
                 $('.slideRight2').addClass(' animated slideInRight ');
                 $('.slideLeft').addClass(' animated slideInLeft ');
@@ -34,6 +55,7 @@ $(window).change(function () {
     } else if (width < 752) {
         $(window).scroll(function () {
             if ($(window).scrollTop() > (height2 * 2 )) {
+                //changes slide in's on desktop
                 $('.slideRight1').addClass(' animated slideInRight ');
                 $('.slideRight2').addClass(' animated slideInRight ');
                 $('.slideLeft').addClass(' animated slideInLeft ');
@@ -41,7 +63,7 @@ $(window).change(function () {
         });
     }
 })
-    .change();//trigger the resize event on page load.
+    .resize();//trigger the resize event on page load.
 
 
 

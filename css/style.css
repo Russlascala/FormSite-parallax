@@ -134,6 +134,12 @@ form{
 
 /* END Of Scroll Section */
 
+/* Start of info blocks */
+.accordion-section .panel-default .panel-heading {
+    border: 0;
+    background: #eaeaea;
+    padding: 0;
+}
 /*
 ####################################################
 M E D I A  Q U E R I E S

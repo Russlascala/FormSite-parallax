@@ -20,28 +20,28 @@ $(window).resize(function () {
 
     
 // Script to animate the three over on the image
-$(window).resize(function () {
+$(window).change(function () {
     var width = $(window).width();
     var height2 = $(".sectionScroll").height();
     if (width > 752) {
         $(window).scroll(function () {
             if ($(window).scrollTop() > height2) {
-                $('.slideRight1').addClass('animated  slideInRight');
-                $('.slideRight2').addClass('animated  slideInRight');
-                $('.slideLeft').addClass('animated  slideInLeft');
+                $('.slideRight1').addClass(' animated slideInRight ');
+                $('.slideRight2').addClass(' animated slideInRight ');
+                $('.slideLeft').addClass(' animated slideInLeft ');
             }
         });
     } else if (width < 752) {
         $(window).scroll(function () {
-            if ($(window).scrollTop() > (height2 * 1.5 )) {
-                $('.slideRight1').addClass('animated  slideInRight');
-                $('.slideRight2').addClass('animated  slideInRight');
-                $('.slideLeft').addClass('animated  slideInLeft');
+            if ($(window).scrollTop() > (height2 * 2.2 )) {
+                $('.slideRight1').addClass(' animated slideInRight ');
+                $('.slideRight2').addClass(' animated slideInRight ');
+                $('.slideLeft').addClass(' animated slideInLeft ');
             }
         });
     }
 })
-    .resize();//trigger the resize event on page load.
+    .change();//trigger the resize event on page load.
 
 
 

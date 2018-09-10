@@ -33,7 +33,7 @@ $(window).change(function () {
         });
     } else if (width < 752) {
         $(window).scroll(function () {
-            if ($(window).scrollTop() > (height2 * 2.2 )) {
+            if ($(window).scrollTop() > (height2 * 2 )) {
                 $('.slideRight1').addClass(' animated slideInRight ');
                 $('.slideRight2').addClass(' animated slideInRight ');
                 $('.slideLeft').addClass(' animated slideInLeft ');

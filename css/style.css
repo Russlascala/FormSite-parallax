@@ -107,6 +107,7 @@ form{
 .startBtn{
     background: #639900;
     color: #fff!important;
+    font-weight: bold;
 }
 .startBtn:hover{
     background: #85CE00;
@@ -140,6 +141,72 @@ form{
     background: #eaeaea;
     padding: 0;
 }
+
+.panel-default:hover{
+    cursor: pointer;
+}
+
+.panel-heading{
+    color: #345000;
+}
+
+.panel-heading h3 {
+    font-size: 1.25rem;
+}
+
+
+
+.panel-heading:hover{
+    color: #639900
+}
+
+.btnToTop:hover{
+    cursor: pointer;
+}
+
+/* End of info blocks */
+
+/*   footer section */
+/* section logo above footer */
+#sectionFive{
+    background-color: #e6e6e6;
+   
+}
+/* footer */
+#footerLogo{
+    width:90%;
+    margin:15px;
+}
+.lineFade{ 
+    height:1px;
+    background: #e4e4e4;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(#e4e4e4), to(#e4e4e4), color-stop(50%, #639a00));
+}
+/*   end third section */
+footer{
+    background-color: #e6e6e6;
+    color: black;
+}
+
+footer a{
+    padding-right: 5px;
+    padding-left: 5px;
+    color: #000;
+}
+footer a:hover{
+    color: #345000;
+}
+
+#altLinks{
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+#copyRight{
+    font-size: 12px;
+}
+/*   end footer section */
+
 /*
 ####################################################
 M E D I A  Q U E R I E S
@@ -200,6 +267,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     
     /* Content After Form Styles  */
 
+    #footerLogo{
+        width:60%;
+    }
+
 }
  
 /* Large devices (desktops, 992px and up) */
@@ -212,9 +283,13 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         margin-top: 50px;
     }
 
+  
+
     
     /* Content After Form Styles  */
-
+    #footerLogo{
+        width:50%;
+    }
 }
  
 /* Extra large devices (large desktops, 1200px and up) */

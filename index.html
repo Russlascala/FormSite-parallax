@@ -16,6 +16,8 @@
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Poppins|Source+Sans+Pro" rel="stylesheet">
     <!-- font-family: 'Source Sans Pro', sans-serif; font-family: 'Poppins', sans-serif; font-family: 'Josefin Sans', sans-serif; -->
+
+    <link href="css/animate.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
     <!-- favicon -->
@@ -71,7 +73,7 @@
                                 </div>
                     
                                 <div class="text-center col-12">
-                                    <button class="btn btn-block form-parts" id="submitBtn" type="submit">GET STARTED NOW!</button>
+                                    <button class="btn btn-block form-parts formBtn" id="submitBtn" type="submit">GET STARTED NOW!</button>
                                     <div id="messages_content"></div>
                                 </div>
                                 <div class="md-form">
@@ -93,19 +95,96 @@
         </div>
     </div>
     <!-- Info Dropdowns -->
+    <section class="content-afterform">
+        <div class="container">
+            <h2>We Make it Easy to Start Investing</h2>
+            <div class="row" id="three-bullets">
+                <div class="col-md-4 bounceTrigger">
+                    <i class="fas fa-user-plus fa-fw icons-top"></i>
+                    <h3>Register</h3>
+                    <p>
+                        Complete the form above to register. It’s completely free to join and connect with our investment network.
+                    </p>
+                </div> 
+                <div class="col-md-4 bounceTrigger">
+                    <i class="fas fa-search fa-fw icons-top"></i>
+                    <h3>Search</h3>
+                    <p>
+                        Learn about investing opportunities in your area. Filter by industry and category to find the right investing
+                        preference for you.
+                    </p>
+                </div>
+                <div class="col-md-4 bounceTrigger">
+                    <i class="far fa-handshake fa-fw icons-top"></i>
+                    <h3>Connect</h3>
+                    <p>
+                        Get connected with our network. Secure your future and start investing today!
+                    </p>
+                </div>
+            </div>
+            <a class="btn btn-xs animated bounceTrigger startBtn" onclick="scrollToTop(200)">Get Started</a>
+        </div>
+    </section><!-- End Three Bullets info -->
+    
+    <div class="sectionScroll" style="color:#fff;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-sm-6" >
+                           
+                        </div>
+                        <div class="col-sm-6 block-color slideRight1">
+                             <h3>Grow Your Money</h3>
+                             <p>
+                                Investing can allow your money to grow over time.
+                             </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                       
+                        <div class="col-sm-6 block-color slideLeft">
+                            <h3>Save for Retirement</h3>
+                            <p>
+                                Put your retirement savings in a portfolio of investments to facilitate growth.
+                            </p>
+                        </div>
+                        <div class="col-sm-6 ">
+                            
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6 ">
+                            
+                        </div>
+                        <div class="col-sm-6 block-color slideRight2">
+                            <h3>Build on Pre-Tax Dollars</h3>
+                            <p>
+                                Investing with employer-sponsored 401(k)s, allows you to save by using pre-tax dollars.
+                            </p>
+                        </div>
+                    </div>
+                </div>  
+            </div>    
+        </div>
+    </div>
+
+    <!-- Info Dropdowns -->
     <section class="accordion-section clearfix mt-3" aria-label="Question Accordions">
         <div class="container">
     
-            <h2>Save Time &amp; Money Today!</h2>
+            <h2>Wealth Stream Builder has many investment ventures for you!</h2>
     
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                 <div class="panel panel-default">
                     <div class="panel-heading p-3 mb-3" role="tab" id="heading0">
                         <h3 class="panel-title">
-                            <a class=role="button" title="Find Savings" onclick="scrollToTop(200)">
+                            <a role="button" title="Find Savings" onclick="scrollToTop(200)">
                                 Home Mortgage
                             </a>
-                            <i class="fas fa-angle-double-up"></i>
+                            <i class="fas fa-caret-square-up"></i>
     
                         </h3>
                     </div>
@@ -127,10 +206,10 @@
                 <div class="panel panel-default">
                     <div class="panel-heading p-3 mb-3" role="tab" id="heading1">
                         <h3 class="panel-title">
-                            <a class=role="button" title="Find Savings" onclick="scrollToTop(200)">
+                            <a role="button" title="Find Savings" onclick="scrollToTop(200)">
                                 Home Services
                             </a>
-                            <i class="fas fa-angle-double-up"></i>
+                            <i class="fas fa-caret-square-up"></i>
                         </h3>
                     </div>
                     <div>
@@ -149,10 +228,10 @@
                 <div class="panel panel-default">
                     <div class="panel-heading p-3 mb-3" role="tab" id="heading2">
                         <h3 class="panel-title">
-                            <a class=role="button" title="Find Savings" onclick="scrollToTop(200)">
+                            <a role="button" title="Find Savings" onclick="scrollToTop(200)">
                                 Insurance for Your Home, Car, Family and Life
                             </a>
-                            <i class="fas fa-angle-double-up"></i>
+                            <i class="fas fa-caret-square-up"></i>
                         </h3>
                     </div>
                     <div>
@@ -172,10 +251,10 @@
                 <div class="panel panel-default">
                     <div class="panel-heading p-3 mb-3" role="tab" id="heading3">
                         <h3 class="panel-title">
-                            <a class=role="button" title="Find Savings" onclick="scrollToTop(200)">
+                            <a role="button" title="Find Savings" onclick="scrollToTop(200)">
                                 Investment Opportunities
                             </a>
-                            <i class="fas fa-angle-double-up"></i>
+                            <i class="fas fa-caret-square-up"></i>
                         </h3>
                     </div>
                     <div>
@@ -196,10 +275,10 @@
                 <div class="panel panel-default">
                     <div class="panel-heading p-3 mb-3" role="tab" id="heading4">
                         <h3 class="panel-title">
-                            <a class=role="button" title="Find Savings" onclick="scrollToTop(200)">
+                            <a role="button" title="Find Savings" onclick="scrollToTop(200)">
                                 Medical Products
                             </a>
-                            <i class="fas fa-angle-double-up"></i>
+                            <i class="fas fa-caret-square-up"></i>
                         </h3>
                     </div>
                     <div>
@@ -222,10 +301,10 @@
                 <div class="panel panel-default">
                     <div class="panel-heading p-3 mb-3" role="tab" id="heading6">
                         <h3 class="panel-title">
-                            <a class=role="button" title="Find Savings" onclick="scrollToTop(200)">
+                            <a role="button" title="Find Savings" onclick="scrollToTop(200)">
                                 More Ways Towards Senior Savings!
                             </a>
-                            <i class="fas fa-angle-double-up"></i>
+                            <i class="fas fa-caret-square-up"></i>
                         </h3>
                     </div>
                     <div>
@@ -245,6 +324,7 @@
         </div>
     </section><!-- End Info Dropdowns -->
 
+
     
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -253,7 +333,7 @@
             crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
             crossorigin="anonymous"></script>
-        <!-- Custom Js 
-        <script src="script.js"></script>-->
+        <!-- Custom Js -->
+        <script src="./js/script.js"></script>
 </body>
 </html>

@@ -17,11 +17,13 @@ body{
     text-align: center;
      text-shadow: #345000 1px 0 10px;
     color:#fff;
+    font-size:25px;
 } 
 #right-txt{
     font-weight: bold;
     font-size: 20px;
     margin-top: 10px;
+    display: none;
 }
 #right-txt span{
     color: #639a00;
@@ -33,26 +35,18 @@ body{
     background-size: auto; */
     /* height: 1000px; */
        /* The image used */
-    
-
     /* Set a specific height */
-    height: 500px; 
-
+    height: 625px; 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-
-    
+    background-size: cover;    
 }
 
 /*  Start Form Styles */
 .formContainer{
-   /*  margin-top:200px;  */
-   margin-top: 53px;
-   margin-bottom: 50px;
-  
+    margin-top: 8px;
 }
 form{
     /* background: rgba(255, 255, 255, 0.5)!important; */
@@ -71,7 +65,7 @@ form{
     font-size:18px;
 }
 
-.btn:hover {
+.formBtn:hover {
   transition : 0.3s;
   box-shadow : 0px 0px 1px 6px #0fdab1;
   cursor : pointer;
@@ -95,3 +89,148 @@ form{
 }
 
 /* End Form Styles */
+
+/* Content After Form Styles  */
+.content-afterform{
+    margin-top: 100px;
+    text-align:center;
+    margin-bottom:25px;
+}
+.icons-top{
+    color:#639900;
+    font-size:40px;
+    display: inline-block;
+}
+#three-bullets{
+    margin-top:25px;
+}
+.startBtn{
+    background: #639900;
+    color: #fff!important;
+}
+.startBtn:hover{
+    background: #85CE00;
+    color: #000!important;
+}
+/* End Content After Form Styles  */
+
+
+/* Start Of Scroll Section */
+
+.sectionScroll{
+    background-image: url(../imgs/ImgScroll.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+.block-color{
+    background: #000;
+    margin-top: 20px;
+    margin-bottom:20px;
+    padding:15px;
+}
+
+/* END Of Scroll Section */
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+ 
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+ 
+/* 
+Extra small devices (portrait phones, less than 544px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 420px) {  
+     /* Form Styles */ 
+    .view{
+        height: 570px;
+    }
+
+
+    /* Content After Form Styles  */
+
+}
+ 
+ 
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) { 
+    /* Form Styles */ 
+    .view{
+        height: 550px;
+    }
+    .formContainer{
+        margin-top: 18px;
+    }
+
+
+    /* Content After Form Styles  */
+
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+    /* Form Styles */
+    #right-txt{
+        display: block;
+    }
+    .formContainer{
+        margin-top: 36px;
+    }
+    #leftTopTxt {
+        margin-top: 36px;
+    }
+
+    
+    /* Content After Form Styles  */
+
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    /* Form Styles */
+     #leftTopTxt{
+        font-size:30px;
+    }
+    .formContainer{
+        margin-top: 50px;
+    }
+
+    
+    /* Content After Form Styles  */
+
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    /* Form Styles */ 
+    .formContainer{
+        margin-top: 60px;
+    }
+
+    
+    /* Content After Form Styles  */
+
+}
+ 
+ 
+ 
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+ 
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) { 
+
+}

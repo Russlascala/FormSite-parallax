@@ -235,6 +235,45 @@ footer a:hover{
 }
 /*   end footer section */
 
+
+/*
+####################################################
+SUBMIT PAGE STYLES
+####################################################
+*/
+
+#page-welcome{
+    text-align: center;
+    margin: 10px;
+}
+
+#first-block{
+    margin-top:26px;
+}
+.listing-block {
+    /* margin-top: 10px; */
+    margin-bottom: 26px;
+}
+.listing-title{
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.listing-title a{
+    color: #1a0dab;
+}
+.listing-title a:visited {
+    color: #609;
+}
+
+.listing-url{
+    color: #006621;
+    margin-bottom:0;
+}
+
+
+/* END SUBMIT PAGE STYLES */
+
+
 /*
 ####################################################
 M E D I A  Q U E R I E S

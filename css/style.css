@@ -96,6 +96,10 @@ form{
    /*  text-shadow: 2px 2px 5px black; */
      text-shadow: 1px 1px 2px black, 0 0 25px #000, 0 0 5px #000;
 }
+
+#arrowImg{
+        display: none;
+     }
 /* End Form Styles */
 
 
@@ -286,6 +290,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     /* Form Styles */
      #leftTopTxt{
         font-size:30px;
+        margin-top: 50px;
     }
     .formContainer{
         margin-top: 50px;
@@ -293,6 +298,13 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     }
 
   
+    #arrowImg{
+        display: block;
+        width: 369px;
+        position: absolute;
+        top: 11%;
+        left: 40%;
+    }
 
     
     /* Content After Form Styles  */
@@ -304,9 +316,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
     /* Form Styles */ 
-    .formContainer{
+    .formContainer, #leftTopTxt{
         margin-top: 60px;
     }
+
 
     
     /* Content After Form Styles  */

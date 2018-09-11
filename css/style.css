@@ -158,6 +158,10 @@ form{
     margin-top:50px;
 }
 
+.panel-title{
+    margin-bottom: 0;
+}
+
 .accordion-section h2{
     margin-top:50px;
 }

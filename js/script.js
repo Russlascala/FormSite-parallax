@@ -1,6 +1,18 @@
+/* Month Array */
+const monthNames = ["January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+];
+/* Gets Date and month and year */
+const d = new Date();
+var month = monthNames[d.getMonth()];
+var year = d.getFullYear();
+/* inputs the value on top of page  */
+document.getElementById("dateTop").innerHTML = (month + " " + year);
+
+
 /* Script to change the column stacking for mobile to get list on bottom of form */
 $(window).resize(function () {
-    console.log('resize called');
+    /* console.log('resize called'); */
     var width = $(window).width();
     /*  log the width to find out what what pixel to change the order at.
         The dev tools in browser might be different */

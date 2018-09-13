@@ -92,3 +92,9 @@ function scrollToTop(scrollDuration) {
             else clearInterval(scrollInterval);
         }, 15);
 }
+
+/* Submit page clickable div  */
+$(".border-blocks").click(function () {
+    window.location = $(this).find("a").attr("href");
+    return false;
+});

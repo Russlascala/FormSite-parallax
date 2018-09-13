@@ -252,6 +252,7 @@ SUBMIT PAGE STYLES
     text-align: center;
     margin: 10px;
     font-size: 18px;
+    font-weight: bold;
 }
 #desktopHeading {
     display:none;
@@ -383,6 +384,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     /*  submit page style */
     #page-welcome{
         font-size:25px;
+        font-weight:bold;
     }
 
     #desktopHeading {

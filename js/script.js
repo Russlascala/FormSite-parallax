@@ -93,7 +93,7 @@ function scrollToTop(scrollDuration) {
         }, 15);
 }
 
-/* Submit page clickable div  */
+/* Submit page makes div clickable to link */
 $(".border-blocks").click(function () {
     window.location = $(this).find("a").attr("href");
     return false;

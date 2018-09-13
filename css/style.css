@@ -318,9 +318,14 @@ SUBMIT PAGE STYLES
 }
 .listing-title a{
     color: #1a0dab;
+    /* text-decoration: underline; */
 }
 .listing-title a:visited {
     color: #609;
+}
+
+.listing-title a span:hover{
+    text-decoration: underline;
 }
 
 .listing-url{
